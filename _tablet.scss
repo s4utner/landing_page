@@ -1,0 +1,124 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .video-section {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+
+        &__content {
+            grid-row: 1/2;
+            max-width: 540px;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__link {
+            text-align: center;
+        }
+
+        &__img {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+
+    .app_download-section {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+
+        &__content {
+            grid-row: 1/2;
+            max-width: 540px;
+        }
+
+        &__heading {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__img {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+
+    .contact {
+        grid-template-columns: none;
+        grid-template-rows: 150px, 305px;
+        justify-content: center;
+        gap: 60px;
+
+        &__content {
+            grid-row: 1/2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__heading {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        .form {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            align-items: center;
+        }
+
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        height: 170px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .top__logo {
+        margin-top: 72px;
+        margin-right: 0;
+    }
+
+    .title {
+        margin-top: 60px;
+        font-size: 48px;
+    }
+    
+    .form__name {
+        row-gap: 30px;
+        justify-content: center;
+    }
+    
+    .video-section__img {
+        max-width: 300px;
+    }
+
+    .app_download-section__img {
+        max-width: 300px;
+    }
+}
